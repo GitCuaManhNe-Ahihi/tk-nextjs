@@ -1,0 +1,28 @@
+.search-area{
+  width: 700px;
+  height: 40px;
+ display: flex;
+
+}
+.search-area input
+{
+  width: 550px;
+  height: 40px;
+  padding: 5px 20px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.search-area input:focus
+{
+  outline: none;
+}
+.search-area button{
+  width: 150px;
+  height: 40px;
+  background-color: #0D5CB6;
+  color: white;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
