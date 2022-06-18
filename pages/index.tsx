@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Head from "next/head";
+import Seo from "../components/common/seo";
 
 const Home: TNextPageWithLayout = () => {
   const { loading, error, data } = useQuery(GET_USER, {
@@ -30,7 +31,7 @@ const Home: TNextPageWithLayout = () => {
   ];
   return (
     <div className={styles.container}>
-
+      <Seo/>
       <Image
         src={
           "https://salt.tikicdn.com/cache/w1240/ts/brickv2og/80/8e/82/bce635ee6888d36805e7c50d7aa29642.png.webp"
