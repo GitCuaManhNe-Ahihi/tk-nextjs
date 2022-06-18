@@ -1,5 +1,5 @@
-import Search from "../ui/search/search";
-import User from "../user/User";
+import Search from "../ui/search";
+import User from "../user/index";
 import Image from "next/image";
 import React from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
