@@ -1,7 +1,7 @@
 import React from 'react'
 import { IMainLayoutProps } from '@/types'
-import Header from 'components/common/header'
-
+import dynamic from 'next/dynamic'
+const Header = dynamic(() => import('components/common/header'), {ssr: false})
 export  function MainLayout({children}: IMainLayoutProps) {
   return (
     <div>

@@ -1,0 +1,58 @@
+.container_addproduct{
+  width: 800px;
+  background-color: rgba(46, 182, 182, 0.199);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-right: 30px;
+
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  height: 30px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.container_addproduct button{
+  width: 300px;
+  height: 50px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #0d78b6;
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+.row textarea{
+  flex: 1;
+  height: 70px;
+}
+.row span{
+  width: 100px;
+
+}
+.container_addmode,.container_addshop
+{ width: 400px;
+  background-color: rgba(46, 182, 182, 0.199);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+}
+.container_addmode button, .container_addshop button{
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #0d78b6;
+  color: white;
+  font-size: 20px;
+  border: none;
+  margin-top: 20px;
+}

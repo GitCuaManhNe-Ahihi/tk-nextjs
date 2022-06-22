@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.6.8",
+    "apollo-upload-client": "^17.0.0",
     "dotenv": "^16.0.1",
     "graphql": "^16.5.0",
     "next": "12.1.6",
@@ -19,6 +20,7 @@
     "swiper": "^8.2.4"
   },
   "devDependencies": {
+    "@types/apollo-upload-client": "^17.0.0",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",

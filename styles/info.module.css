@@ -1,0 +1,42 @@
+.info{
+  width: 1280px;
+  margin: auto;
+  padding: 20px;
+}
+.info_container{
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.info_container .row
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  height: 40px;
+}
+.info_container .row label{
+  text-transform: capitalize;
+  width: 200px;
+}
+.info_container .row input[type='text'] ,.info_container .row input[type='date']
+{
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+.info button
+{
+  display: block;
+  height: 40px;
+  width: 500px;
+  background-color: #1A94FF;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  margin: 0 auto;
+}

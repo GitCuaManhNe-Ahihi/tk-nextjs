@@ -1,0 +1,13 @@
+.shop-container{
+  width: 1280px;
+  display: flex;
+  margin: 30px auto;
+}
+.shop-container .shop-info{
+  width: 430px;
+  height: 800px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-right: 20px;
+}

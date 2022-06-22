@@ -5,6 +5,7 @@
   justify-content: center;
   width: 1280px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .main {
@@ -120,15 +121,127 @@
   }
 }
 
-.heading{
+.heading {
   display: block;
   margin: auto;
   margin-top: 50px;
 }
 
-.swiper_{
+.swiper_ {
   margin-top: 20px;
   width: 1280px;
   height: 400px;
   overflow: hidden;
+}
+.cardmode {
+  width: 1216px;
+  height: 650px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cardmode .card{
+  border-radius: 30px;
+}
+.promotion{
+  margin-top: 50px;
+  width: 1216px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.promotion h1{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  height: 50px;
+  background-color: white;
+}
+.promotion .promotion__container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+
+}
+.products_follow_mode
+{
+  width: 1216px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.products_follow_mode .chooseOption
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 100px;
+  margin: 50px 0;
+  list-style: none;
+  font-size: 25px;
+  font-weight: bold;
+  user-select: none;
+}
+.products_follow_mode .chooseOption li
+{
+  opacity: 0.7;
+  position: relative;
+  width: 200px;
+}
+.products_follow_mode__container
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.products_follow_mode__container .product
+{
+  width: 280px;
+  height: 460px;
+  margin: 50px 0;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.products_follow_mode__container .product .desciption
+{
+  padding: 20px;
+
+}
+.products_follow_mode__container .product .desciption .name{
+  font-size: 30px;
+  font-weight: bold;
+}
+.products_follow_mode__container .product .desciption .price{
+  font-size: 20px;
+  opacity: .8;
+}
+.products_follow_mode__container .product .desciption .rating{
+  display: flex;
+  width: 100%;
+  height: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.products_follow_mode__container .product .desciption .rating
+ul{
+  display: flex;
+  flex:3;
+  justify-content: space-between;
+  align-items: center;
+}
+.products_follow_mode__container .product .desciption .countsale
+{
+  flex: 2;
+  font-size: 12px;
+  opacity: .8;
 }

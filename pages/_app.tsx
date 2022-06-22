@@ -1,11 +1,26 @@
 import Head from "next/head";
-import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import { ApolloClient, ApolloProvider, HttpLink, ApolloLink, InMemoryCache, concat } from "@apollo/client";
 import { TAppPropsWithLayout } from "types/layout";
 import { EmptyLayout } from '../components/layout/index';
 import "../styles/globals.css";
+import AppProvider from "components/context/app";
+import {createUploadLink} from "apollo-upload-client";
+const httpLink = createUploadLink({
+    uri: "https://server-graph01.herokuapp.com/graphql"
+});
+const authMiddleware = new ApolloLink((operation, forward) => {
+  // add the authorization to the headers
+  operation.setContext(({ headers = {} }) => ({
+    headers: {
+      ...headers,
+      authorization: 'Bearer ' + localStorage.getItem('token'),
+    }
+  }));
 
+  return forward(operation);
+})
 const client = new ApolloClient({
-  uri: 'https://server-graph01.herokuapp.com/graphql',
+  link:concat(authMiddleware,httpLink),
   cache: new InMemoryCache(),
 });
 
@@ -14,6 +29,7 @@ function MyApp({ Component, pageProps }: TAppPropsWithLayout) {
   const Layout = Component.Layout || EmptyLayout;
   return (
     <ApolloProvider client={client}>
+      <AppProvider>
       <Layout>
       <Head>
         <title>TIKI-TECH</title>
@@ -22,6 +38,7 @@ function MyApp({ Component, pageProps }: TAppPropsWithLayout) {
       </Head>
       <Component {...pageProps} />
       </Layout>
+      </AppProvider>
     </ApolloProvider>
   );
 }
